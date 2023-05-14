@@ -1,18 +1,18 @@
 .container {
-    max-width: 400px;
-    margin: 50px auto; /* Add margin from top and center the container */
-    padding: 40px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
 }
 
 h2 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 input[type="date"],
@@ -21,29 +21,43 @@ input[type="number"],
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 input[type="submit"] {
-    background-color: #F5C532;
-    color: white;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 50%;
-    font-size: 14px;
-    margin: 0 auto; /* Center the submit button horizontally */
-    display: block; /* Ensure the submit button occupies full width */
+  background-color: #F5C532;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 12px;
 }
 
 input[type="submit"]:hover {
-    background-color: #F5C532;
+  background-color: #F5C532;
 }
+
+/* Media query for smaller screen sizes */
+@media (max-width: 600px) {
+  .container {
+      max-width: 100%;
+      margin: 20px 0;
+      padding: 40px; /* Increase the padding to increase the form height */
+      height: 400px;
+      max-height: 100%;
+  }
+}
+
+
+
 
 /*-----------------------------------*\ 
   #FOOTER

@@ -370,6 +370,7 @@ html {
 }
 
 .main-heading {
+  padding: 20px;
   color: var(--space-cadet);
   font-size: var(--fs-1);
   font-weight: 600;
@@ -379,7 +380,7 @@ html {
 }
 
 .home-text {
-  color: var(--rhythm);
+  color: rgb(85, 85, 85);
   margin-bottom: 30px;
   line-height: 1.6;
 }
